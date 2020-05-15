@@ -1,0 +1,17 @@
+NAME:
+   mountains - Commandline tool to procedurally generate a mountain range as png
+
+USAGE:
+   mountains [options]
+
+COMMANDS:
+   help, h  Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --change AMOUNT, -c AMOUNT    the AMOUNT of change each step (default: 1)
+   --destination PATH, -d PATH   the destination PATH of the generated image (default: "mountains.png")
+   --height HEIGHT, --ht HEIGHT  the HEIGHT of the image (default: 720)
+   --seed SEED, -s SEED          the given SEED for the mountains (default: 1589548565547100800)
+   --step HEIGHT, --st HEIGHT    the HEIGHT of the next step (default: 3)
+   --width WIDTH, -w WIDTH       the WIDTH of the image (default: 1280)
+   --help, -h                    show help (default: false)
