@@ -82,6 +82,10 @@ func DrawAndSave() {
 		height := (rand.Float64() * heightMax)
 		slope := (rand.Float64()*stepMax)*2 - stepMax
 
+		if l < 1 {
+			heightMax = heightMax * 0.75
+		}
+
 		gc := draw2dimg.NewGraphicContext(dest)
 		gc.SetLineWidth(5)
 		if l > 1 {
@@ -105,7 +109,7 @@ func DrawAndSave() {
 			}
 
 			if height >= cache[i] && l > 1 {
-				height -= 25
+				height -= height * 0.75
 				slope *= -1
 			}
 
